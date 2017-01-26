@@ -5,7 +5,7 @@
   <li class="contact_list">
     <article>
       <h3><%= contact.first_name %> <%= contact.last_name %> (<%= contact.email%>)</h3>
-      <a href="#">Edit</a> | <a href="#">Delete</a>
+      <a href="#">Edit</a> | <a href="#">Delete</a> | <a href="/contacts/<%= contact.id %>">More</a>
     </article>
   </li>
   <% end %>
