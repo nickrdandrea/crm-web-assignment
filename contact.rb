@@ -52,7 +52,7 @@ class Contact
   # This method should accept an id as an argument
   # and return the contact who has that id
   def self.find(id)
-    @@contacts.find_index {|s| return s if s.id == id}
+    @@contacts.find {|s| s.id == id}
   end
 
   # This method should allow you to specify
